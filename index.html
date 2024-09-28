@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+		<meta name="title" content="form">
+		<meta name="description" content="form validation">
+		<meta name="keywords" content="form">
+		<meta name="robots" content="index,follow">
+		<meta name="language" content="English">
+		<meta name="revisit-after" content="7 days">
+		<meta name="author" content="Nigat Sultana">
+
+         <title>Form validation</title>
+         
+         <!--font links-->
+
+         <!--css links-->
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+         <link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="css/media.css">
+         </head>
+         <body>
+        
+           <div class="container">
+      
+          
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="email"color class="form-label">Email</label>
+                <input type="email"class="form-control" name="email"placeholder="email address" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control"id="password" name="password"placeholder="password"required>
+              </div>
+
+              <div class="col-md-12">
+                <label for="p_address" class="form-label">Present Address</label>
+                <input type="text" class="form-control"id="p_address" name="p_address"placeholder="present address"required>
+              </div>
+
+              <div class="col-md-12">
+                <label for="address" class="form-label">Parmanent Address</label>
+                <input type="text" class="form-control"id="address" name="address"placeholder="parmanent address"required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control"id="city" name="city"placeholder="city"required>
+              </div>
+
+              <div class="col-md-4">
+                <label for="State" class="form-label">State</label>
+                <select id="State" class="form-select"required >
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+
+              <div class="col-md-2">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="zip" name="zip">
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+             </div>
+             
+
+            </form>
+           </div>
+           <br>
+           <br>
+
+           <section class="about">
+            <div class="container">
+              <!--from start-->
+              <form class="row g-3 needs-validation" novalidate>
+                <!--first name-->
+                <div class="col-md-6">
+                  <label for="f_name" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="f_name" name="f_name"placeholder="enter your first name " required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Enter your first name!
+                  </div>
+                </div>
+                <!--last name-->
+
+                <div class="col-md-6">
+                  <label for="l_name" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="l_name" name="l_name"placeholder="enter your last name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Enter your last name!
+                  </div>
+                  
+                </div>
+                <!--email address-->
+
+                <div class="col-md-12">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" name="email"placeholder="Enter Your Email ID" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Enter your email ID!
+                  </div>
+                  
+                </div>
+                 <div class="col-md-4">
+                  <label for="city" class="form-label">City</label>
+                  <input type="text" class="form-control" id="city"name="city"placeholder="city" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state"anme="state" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Bangladesh</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                  </select>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+           
+              
+            </div>
+
+           </section>
+         
+          
+      
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
+  </body>	
+	
+	</html>
